@@ -45,13 +45,11 @@
             })
             .then(response => response.json())
             .then(data => {
-                resultado.innerHTML = `Usuario registrado con ID: ${data.id}`;
+            console.log(`Usuario registrado con ID: ${data.id}`);
+             });
+
             })
-            .catch(error => {
-                console.error('Error al registrar el usuario:', error);
-                resultado.innerHTML = 'Error al registrar el usuario.';
-            });
-        });
+
     </script>
 </body>
 </html>
